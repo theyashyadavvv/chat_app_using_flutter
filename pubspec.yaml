@@ -1,0 +1,63 @@
+name: chatapp_firebase
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+
+dependencies:
+animated_splash_screen: ^1.3.0
+  firebase_core: ^2.27.0
+  flutter:
+  sdk: flutter
+flutter_native_splash:
+  image: assets/img2.jpg
+  color: "#f9f9f9"
+lottie: ^3.1.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+    android: "launcher_icon"
+    ios: true
+    image_path: "images/icon.png"
+    min_sdk_android: 21 # android min sdk min:16, default 21
+    web:
+      generate: true
+      image_path: "path/to/image.png"
+      background_color: "#hexcode"
+      theme_color: "#hexcode"
+    windows:
+      generate: true
+      image_path: "path/to/image.png"
+      icon_size: 48 # min:48, max:256, default: 48
+    macos:
+      generate: true
+      image_path: "path/to/image.png"
+
+
+    cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+#image
+  assets:
+    - images/  # Example: All images in 'assets/images'
+   # - assets/my_icon.png  # Example: Specific image
+
